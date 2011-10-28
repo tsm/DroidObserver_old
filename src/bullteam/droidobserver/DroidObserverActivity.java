@@ -27,7 +27,8 @@ public class DroidObserverActivity extends Activity {
 				{
 					if(location!=null)
 					{
-						Toast.makeText(getBaseContext(), "Nowa lokalizacja: szerokœæ [" + location.getLatitude()+"] d³ugoœæ [" +location.getLongitude()+"]",Toast.LENGTH_SHORT).show();
+						Toast.makeText(getBaseContext(), "Nowa lokalizacja: szerokœæ [" + location.getLatitude()
+								+"] d³ugoœæ [" +location.getLongitude()+"]",Toast.LENGTH_SHORT).show();
 					}
 				}
 				
@@ -41,7 +42,7 @@ public class DroidObserverActivity extends Activity {
 					
 				}
 			};
-	        locMgr.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,0,0,locListener);
+	        locMgr.requestLocationUpdates(LocationManager.GPS_PROVIDER,0,0,locListener);
 	        setContentView(R.layout.main);       
 	    }
 		
