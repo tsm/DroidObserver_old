@@ -2,7 +2,7 @@
 <resources>
 
     <string name="hello">Hello World, GPSlocatorActivity!</string>
-    <string name="app_name">GPSlocator</string>
+    <string name="app_name">DroidObserver</string>
     <string name="get_gps_button">Pobierz lokalizację</string>
 
 </resources>
